@@ -1,0 +1,11 @@
+tests:
+  # section.subsection
+  drivers.pcd8544:
+    build_only: false
+    platform_allow:
+      - nucleo_l152re
+      - esp32_devkitc_wroom/esp32/procpu
+    integration_platforms:
+      - nucleo_l152re
+      - esp32_devkitc_wroom/esp32/procpu
+    tags: graphics

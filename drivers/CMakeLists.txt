@@ -1,0 +1,1 @@
+add_subdirectory_ifdef(CONFIG_PCD8544 pcd8544)

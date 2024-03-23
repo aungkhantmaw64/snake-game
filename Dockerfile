@@ -25,6 +25,12 @@ WORKDIR /root/zephyrproject/zephyr/app
 
 COPY ./entrypoint.sh /root/zephyrproject/zephyr/app
 
+RUN chmod +x /root/zephyrproject/zephyr/app/entrypoint.sh
+
 RUN echo "source ~/zephyrproject/.venv/bin/activate" >> ~/.zshrc
+
+ENV ZEPHYR_PATH=/root/zephyrproject
+ENV ZEPHYR_BOARDS_PATH=${ZEPHYR_PATH}/zephyr/boards
+ENV FW_PATH=${ZEPHYR_PATH}/zephyr/app
 
 ENTRYPOINT [ "/root/zephyrproject/zephyr/app/entrypoint.sh" ]

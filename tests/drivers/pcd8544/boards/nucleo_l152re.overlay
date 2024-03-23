@@ -1,0 +1,9 @@
+/ {
+    pcd8544 {
+        compatible = "gpio-leds";
+        pcd8544_backlight: pcd_bl {
+            gpios = <&gpioa 8 GPIO_ACTIVE_HIGH>;
+            label = "Backlight";
+        };
+    };
+};

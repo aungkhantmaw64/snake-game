@@ -1,0 +1,4 @@
+config PCD8544
+    bool "PCD8544 LCD Driver"
+    help
+      This option enables pcd8544 lcd driver
