@@ -1,5 +1,6 @@
 ZephyrRTOS-based Snake Game
 ###########################
+
 .. contents::
    :local:
    :depth: 2
